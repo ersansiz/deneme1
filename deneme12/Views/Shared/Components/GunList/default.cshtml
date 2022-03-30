@@ -1,0 +1,21 @@
+﻿@model List<Gun>
+  
+ <a asp-action="Index" asp-controller="DersProgramis1" class="dropdown-toggle
+                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"
+                                >Gün</a>
+
+     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+ <li>
+     <a asp-action="Index" asp-controller="DersProgramis1" class="dropdown-item
+                               " id="dropdownMenuButton" 
+                                >Tümü</a>
+     </li>
+    @foreach (var item in Model)
+    {
+        <li>
+        <a asp-action="Index" asp-controller="DersProgramis1" asp-route-sinifId="@item.GunId" class="dropdown-item
+                                "> @item.GunName</a>
+        </li>
+    }
+
+       </ul>

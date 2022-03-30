@@ -1,0 +1,48 @@
+﻿@model deneme12.Entity.DersProgrami
+
+<form asp-action="Index" asp-controller="DersProgramis">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <thead>
+        <tr>
+            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+              
+            </th>
+            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+
+                <div class="form-group">
+                    <label asp-for="@Model.Sinif.SinifName" class="control-label"></label>
+                    <select asp-for="SinifId" class="form-control" asp-items="ViewBag.SinifId"></select>
+                </div>
+
+
+            </th>
+            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                <div class="form-group">
+                    <label asp-for="@Model.Gun.GunName" class="control-label"></label>
+                    <select asp-for="GunId" class="form-control" asp-items="ViewBag.GunId"></select>
+                </div>
+            </th>
+            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                <div class="form-group">
+                    <label asp-for="@Model.Derslik.DerslikName" class="control-label"></label>
+                    <select asp-for="DerslikId" class="form-control" asp-items="ViewBag.DerslikId"></select>
+                </div>
+            </th>
+            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                <div class="form-group">
+                    <label asp-for="@Model.Ders.DersName" class="control-label"></label>
+                    <select asp-for="DersId" class="form-control" asp-items="ViewBag.DersId"></select>
+                </div>
+            </th>
+
+
+
+            <th class="text-secondary opacity-7 text-end ">
+                <div class="col-7 text-end">
+                    <input type="submit" value="Ara" class="btn bg-gradient-info p-2 mb-1 opacity-10" />
+                </div>
+            </th>
+
+        </tr>
+    </thead>
+</form>

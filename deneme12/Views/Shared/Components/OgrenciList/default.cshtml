@@ -1,0 +1,19 @@
+﻿@model List<Ders>
+  
+    <h5 class="card-title text-sm">Ders Seçin</h5>
+    <div class="card p-0 " >
+ <select class="form-select "  aria-label="multiple select example" name="VeliId" >
+ 
+                                   
+                                    
+                                         @foreach(var item in Model)
+                                    {
+                
+                                 
+                          
+                                <option  value="@item.DersName">@item.DersName</option>
+                           }
+   
+  </select>
+   
+  </div>

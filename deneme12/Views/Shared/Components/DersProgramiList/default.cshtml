@@ -1,0 +1,71 @@
+﻿@model DersProgramiListVm
+ 
+                                <tbody>
+                       
+                                    
+          @foreach (var item in Model.DersProgramiList)
+                                    {
+                                     <tr>
+                                          <td>
+                                                <div class="d-flex px-3 py-1">
+
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        
+                                                    </div>
+                                                </div>
+                                                </td>
+                                            <td>
+                                                <div class="d-flex px-3 py-1">
+
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-xs"><SinifAd ders-programi-list-id="@item.DersProgramiListId"></SinifAd></h6>
+                                                    </div>
+                                                </div>
+                                                </td>
+                                                <td>
+                                                <div class="d-flex px-3 py-1">
+
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-xs"><GunAd ders-programi-list-id="@item.DersProgramiListId"></GunAd></h6>
+                                                    </div>
+                                                </div>
+                                                </td>
+                                            <td>
+                                                  <div class="d-flex px-3 py-1">
+
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-xs"><DerslikAd ders-programi-list-id="@item.DersProgramiListId"></DerslikAd></h6>
+                                                    </div>
+                                                </div>
+                                                </td>
+                                                <td>
+                                                  <div class="d-flex px-3 py-1">
+
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-xs"><DersAd ders-programi-list-id="@item.DersProgramiListId"></DersAd></h6>
+                                                    </div>
+                                                </div>
+                                                </td>
+                                                 <td>
+                                                <div class="d-flex px-3 py-1">
+
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                       
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            
+                                           
+                                     </tr>
+
+                                       
+        }
+
+  
+
+
+
+                                </tbody>
+                            
+   
+ 
